@@ -18,11 +18,11 @@ android {
         }
     }
     productFlavors {
-        free{
-
+        free {
+            applicationIdSuffix "free"
         }
         premium {
-
+            applicationIdSuffix "premium"
         }
     }
 }
@@ -63,7 +63,7 @@ task sortLists << {
 
 task iterateRange << {
     def x = 0
-    for (i in 0 .. 5) {
+    for (i in 0..5) {
         x += i
         println x
     }
@@ -81,13 +81,13 @@ task iterateArray << {
     def array = (0..5).toArray()
     def x = 0
     for (i in array) {
-        x +=i
+        x += i
         println x
     }
 }
 
 task iterateMap << {
-    def map = ['name':'LeBron', 'surname':"James", 'team':"Cavs"]
+    def map = ['name': 'LeBron', 'surname': "James", 'team': "Cavs"]
     def total
     for (i in map) {
         total += i.value
