@@ -1,0 +1,9 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+//prevents build from crashing with exception if built in Java 8 environment
+targetCompatibility = '1.7'
+sourceCompatibility = '1.7'
