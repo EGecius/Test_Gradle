@@ -4,7 +4,7 @@ apply from: '../groovy_practice'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.0"
+    buildToolsVersion '25.0.0'
 
     defaultConfig {
         applicationId "com.egecius.test_gradle"
