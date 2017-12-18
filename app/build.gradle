@@ -4,7 +4,7 @@ apply from: '../groovy_practice'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.egecius.test_gradle"
@@ -23,12 +23,16 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    flavorDimensions "minApi"
+
     productFlavors {
         free {
             applicationIdSuffix "free"
+            dimension "minApi"
         }
         premium {
             applicationIdSuffix "premium"
+            dimension "minApi"
         }
     }
 }
